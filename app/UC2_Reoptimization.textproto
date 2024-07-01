@@ -1,0 +1,83 @@
+#  Copyright 2024 Google LLC
+# 
+#  Licensed under the Apache License, Version 2.0 (the "License");
+#  you may not use this file except in compliance with the License.
+#  You may obtain a copy of the License at
+#  
+#    https://www.apache.org/licenses/LICENSE-2.0
+#  
+#  Unless required by applicable law or agreed to in writing, software
+#  distributed under the License is distributed on an "AS IS" BASIS,
+#  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+#  See the License for the specific language governing permissions and
+#  limitations under the License.
+#
+# proto-message: OptimizeToursRequest
+model {
+shipments {
+  pickups {
+    label : "19f69450-e19a-11ec-8fea-0242ac120002"
+    arrival_location { latitude: 60.175380 longitude: 24.953540  }
+    time_windows {
+      start_time { seconds: 1000 }
+      end_time { seconds: 2000 }
+    }
+    duration { seconds: 150 }
+  }
+  deliveries {
+    label : "19f6978e-e19a-11ec-8fea-0242ac120002"
+    arrival_location { latitude: 60.175380 longitude: 24.931585 }
+    time_windows {
+      start_time { seconds: 3000 }
+      end_time { seconds: 4000 }
+    }
+    duration: { seconds: 250 }
+  }
+  load_demands {
+    key: "weight"
+    value: { amount: 10 }
+  }
+}
+shipments {
+  pickups {
+    label : "19f698c4-e19a-11ec-8fea-0242ac120002"
+    arrival_location { latitude: 60.177210 longitude: 24.951957 }
+    time_windows {
+      start_time { seconds: 1001 }
+      end_time { seconds: 2001 }
+    }
+    duration { seconds: 151 }
+  }
+  deliveries {
+    label : "19f699e6-e19a-11ec-8fea-0242ac120002"
+    arrival_location { latitude: 60.168085 longitude: 24.940850 }
+    time_windows {
+      start_time { seconds: 3001 }
+      end_time { seconds: 4001 }
+    }
+    duration { seconds: 251 }
+  }
+  load_demands {
+    key: "weight"
+    value: { amount: 20 }
+  }
+}
+    vehicles {
+      label : "vehicle-UC2-0-55596284-e186-11ec-8fea-0242ac120002"
+      start_location { latitude: 60.192059 longitude: 24.945831 }
+      end_location { latitude: 60.192059 longitude: 24.945831 }
+      load_limits {
+        key: "weight"
+        value: { max_load: 50 }
+      }
+    }
+    vehicles {
+      label : "vehicle-UC2-1-555965d6-e186-11ec-8fea-0242ac120002"
+      start_location { latitude: 60.192059 longitude: 24.945831 }
+      end_location { latitude: 60.192059 longitude: 24.945831}
+      load_limits {
+        key: "weight"
+        value: { max_load: 60 }
+      }
+    }
+  }

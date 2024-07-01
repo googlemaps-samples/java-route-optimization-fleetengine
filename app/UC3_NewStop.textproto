@@ -1,0 +1,212 @@
+#  Copyright 2024 Google LLC
+# 
+#  Licensed under the Apache License, Version 2.0 (the "License");
+#  you may not use this file except in compliance with the License.
+#  You may obtain a copy of the License at
+#  
+#    https://www.apache.org/licenses/LICENSE-2.0
+#  
+#  Unless required by applicable law or agreed to in writing, software
+#  distributed under the License is distributed on an "AS IS" BASIS,
+#  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+#  See the License for the specific language governing permissions and
+#  limitations under the License.
+#
+# proto-message: OptimizeToursRequest
+model {
+shipments {
+  pickups {
+    label : "19f69450-e19a-11ec-8fea-0242ac120002"
+    arrival_location { latitude: 60.175380 longitude: 24.953540  }
+    time_windows {
+      start_time { seconds: 1000 }
+      end_time { seconds: 2000 }
+    }
+    duration { seconds: 150 }
+  }
+  deliveries {
+    label : "19f6978e-e19a-11ec-8fea-0242ac120002"
+    arrival_location { latitude: 60.175380 longitude: 24.931585 }
+    time_windows {
+      start_time { seconds: 3000 }
+      end_time { seconds: 4000 }
+    }
+    duration: { seconds: 250 }
+  }
+  load_demands {
+    key: "weight"
+    value: { amount: 10 }
+  }
+}
+shipments {
+  pickups {
+    label : "19f698c4-e19a-11ec-8fea-0242ac120002"
+    arrival_location { latitude: 60.177210 longitude: 24.951957 }
+    time_windows {
+      start_time { seconds: 1001 }
+      end_time { seconds: 2001 }
+    }
+    duration { seconds: 151 }
+  }
+  deliveries {
+    label : "19f699e6-e19a-11ec-8fea-0242ac120002"
+    arrival_location { latitude: 60.168085 longitude: 24.940850 }
+    time_windows {
+      start_time { seconds: 3001 }
+      end_time { seconds: 4001 }
+    }
+    duration { seconds: 251 }
+  }
+  load_demands {
+    key: "weight"
+    value: { amount: 25 }
+  }
+}
+shipments {
+  pickups {
+    label : "7a344aca-e31f-11ec-8fea-0242ac120002"
+    arrival_location { latitude: 60.165397 longitude: 24.932371 }
+    time_windows {
+      start_time { seconds: 1001 }
+      end_time { seconds: 2001 }
+    }
+    duration { seconds: 151 }
+  }
+  deliveries {
+    label : "7a344aca-e31f-11ec-8fea-0242ac120002"
+    arrival_location { latitude: 60.166894 longitude: 24.962837 }
+    time_windows {
+      start_time { seconds: 3001 }
+      end_time { seconds: 4001 }
+    }
+    duration { seconds: 251 }
+  }
+  load_demands {
+    key: "weight"
+    value: { amount: 20 }
+  }
+}
+shipments {
+  pickups {
+    label : "7a344d90-e31f-11ec-8fea-0242ac120002"
+    arrival_location { latitude: 60.184990 longitude: 24.980353 }
+    time_windows {
+      start_time { seconds: 1001 }
+      end_time { seconds: 2001 }
+    }
+    duration { seconds: 151 }
+  }
+  deliveries {
+    label : "7a344d90-e31f-11ec-8fea-0242ac120002"
+    arrival_location { latitude: 60.184471 longitude: 25.0036199 }
+    time_windows {
+      start_time { seconds: 3001 }
+      end_time { seconds: 4001 }
+    }
+    duration { seconds: 251 }
+  }
+  load_demands {
+    key: "weight"
+    value: { amount: 30 }
+  }
+}
+shipments {
+  pickups {
+    label : "7a344eee-e31f-11ec-8fea-0242ac120002"
+    arrival_location { latitude: 60.164372 longitude: 24.9059327 }
+    time_windows {
+      start_time { seconds: 1001 }
+      end_time { seconds: 2001 }
+    }
+    duration { seconds: 151 }
+  }
+  deliveries {
+    label : "7a344eee-e31f-11ec-8fea-0242ac120002"
+    arrival_location { latitude: 60.175220 longitude: 24.921979 }
+    time_windows {
+      start_time { seconds: 3001 }
+      end_time { seconds: 4001 }
+    }
+    duration { seconds: 251 }
+  }
+  load_demands {
+    key: "weight"
+    value: { amount: 20 }
+  }
+}
+shipments {
+  pickups {
+    label : "7a345024-e31f-11ec-8fea-0242ac120002"
+    arrival_location { latitude: 60.187683 longitude: 24.927986 }
+    time_windows {
+      start_time { seconds: 1001 }
+      end_time { seconds: 2001 }
+    }
+    duration { seconds: 151 }
+  }
+  deliveries {
+    label : "7a345024-e31f-11ec-8fea-0242ac120002"
+    arrival_location { latitude: 60.177609 longitude: 24.946959 }
+    time_windows {
+      start_time { seconds: 3001 }
+      end_time { seconds: 4001 }
+    }
+    duration { seconds: 251 }
+  }
+  load_demands {
+    key: "weight"
+    value: { amount: 7 }
+  }
+}
+shipments {
+  pickups {
+    label : "7a345164-e31f-11ec-8fea-0242ac120002"
+    arrival_location { latitude: 60.242307 longitude: 24.896658 }
+    time_windows {
+      start_time { seconds: 1003 }
+      end_time { seconds: 2003 }
+    }
+    duration { seconds: 151 }
+  }
+  deliveries {
+    label : "7a345164-e31f-11ec-8fea-0242ac120002"
+    arrival_location { latitude: 60.310734 longitude: 24.970174 }
+    time_windows {
+      start_time { seconds: 3003 }
+      end_time { seconds: 4003 }
+    }
+    duration { seconds: 251 }
+  }
+  load_demands {
+    key: "weight"
+    value: { amount: 5 }
+  }
+}
+    vehicles {
+      label : "vehicle-UC3-0-55596284-e186-11ec-8fea-0242ac120002"
+      start_location { latitude: 60.192059 longitude: 24.945831 }
+      end_location { latitude: 60.192059 longitude: 24.945831 }
+      load_limits {
+        key: "weight"
+        value: { max_load: 50 }
+      }
+    }
+    vehicles {
+      label : "vehicle-UC3-1-555965d6-e186-11ec-8fea-0242ac120002"
+      start_location { latitude: 60.192059 longitude: 24.945831 }
+      end_location { latitude: 60.192059 longitude: 24.945831}
+      load_limits {
+        key: "weight"
+        value: { max_load: 60 }
+      }
+    }
+    vehicles {
+      label : "vehicle-UC3-2-1211f1de-e321-11ec-8fea-0242ac120002"
+      start_location { latitude: 60.192059 longitude: 24.945831 }
+      end_location { latitude: 60.192059 longitude: 24.945831}
+      load_limits {
+        key: "weight"
+        value: { max_load: 55 }
+      }
+    }
+  }
